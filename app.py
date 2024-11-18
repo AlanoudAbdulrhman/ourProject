@@ -6,7 +6,7 @@ from io import StringIO
 from dotenv import load_dotenv
 
 
-app = Flask(__name__)
+app = Flask(_name_)
 app.secret_key = 'your_secret_key'  # Replace with a secure key
 
 load_dotenv()
@@ -194,5 +194,5 @@ def logout():
     return redirect(url_for('home'))
 
 
-if __name__ == '_main_':
+if _name_ == '_main_':
     app.run(host='0.0.0.0', port=10000)
