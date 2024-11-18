@@ -6,7 +6,7 @@ from io import StringIO
 from dotenv import load_dotenv
 
 
-app = Flask(_name_)
+app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Replace with a secure key
 
 load_dotenv()
