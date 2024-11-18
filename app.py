@@ -11,8 +11,8 @@ app.secret_key = 'your_secret_key'  # Replace with a secure key
 
 load_dotenv()
 
-aws_access_key = os.getenv("AWS_ACCESS_KEY")
-aws_secret_key = os.getenv("AWS_SECRET_KEY")
+aws_access_key = os.getenv("MY_AWS_ACCESS_KEY")
+aws_secret_key = os.getenv("MY_AWS_SECRET_KEY")
 
 # AWS S3 Configuration
 s3_client = boto3.client(
